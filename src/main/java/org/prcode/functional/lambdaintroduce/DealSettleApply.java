@@ -1,10 +1,10 @@
-package org.procde.functional.lambdaintroduce;
+package org.prcode.functional.lambdaintroduce;
 
 import org.junit.jupiter.api.Test;
-import org.procde.functional.lambdaintroduce.pojo.Citizen;
-import org.procde.functional.lambdaintroduce.strategy.SettleStrategy;
-import org.procde.functional.lambdaintroduce.strategy.impl.CertificateSettleStrategy;
-import org.procde.functional.lambdaintroduce.strategy.impl.SocialInsuranceSettleStrategy;
+import org.prcode.functional.lambdaintroduce.strategy.impl.CertificateSettleStrategy;
+import org.prcode.functional.lambdaintroduce.strategy.impl.SocialInsuranceSettleStrategy;
+import org.prcode.functional.lambdaintroduce.pojo.Citizen;
+import org.prcode.functional.lambdaintroduce.strategy.SettleStrategy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class DealSettleApply {
 
-    List<Citizen> initCitizens() {
+    public List<Citizen> initCitizens() {
         List<Citizen> citizens = new ArrayList<>();
         citizens.add(new Citizen("张三", 23, 11, 0));
         citizens.add(new Citizen("李四", 24, 13, 0));
@@ -27,7 +27,7 @@ public class DealSettleApply {
         return citizens;
     }
 
-    List<Citizen> filterApply(List<Citizen> citizenList, SettleStrategy strategy) {
+    public List<Citizen> filterApply(List<Citizen> citizenList, SettleStrategy strategy) {
         List<Citizen> resList = new ArrayList<>();
         for (Citizen citizen : citizenList) {
             if (strategy.test(citizen)) {

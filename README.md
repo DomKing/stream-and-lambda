@@ -11,3 +11,4 @@
 ## 目录
 
 1. [stream and lambda(1) - lambda 简介](http://blog.prcode.org/2021/05/stream-and-lambda-1-lambda-intrduce/) ：org.prcode.functional.lambdaintroduce
+2. [stream and lambda(2) - 函数式接口简介](http://blog.prcode.org/2021/06/stream-and-lambda-2-functionalinterface-introduce/) ：org.procde.functional.functionalinterface.introduce

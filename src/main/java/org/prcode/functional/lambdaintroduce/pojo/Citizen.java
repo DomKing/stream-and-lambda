@@ -1,4 +1,4 @@
-package org.procde.functional.lambdaintroduce.pojo;
+package org.prcode.functional.lambdaintroduce.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

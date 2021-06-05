@@ -1,6 +1,6 @@
-package org.procde.functional.lambdaintroduce.strategy;
+package org.prcode.functional.lambdaintroduce.strategy;
 
-import org.procde.functional.lambdaintroduce.pojo.Citizen;
+import org.prcode.functional.lambdaintroduce.pojo.Citizen;
 
 /**
  * @author kangd001
