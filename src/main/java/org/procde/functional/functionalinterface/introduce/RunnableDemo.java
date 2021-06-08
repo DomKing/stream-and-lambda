@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
  * @author kangd001
  * @date 2021/6/4 22:38
  */
-public class RunnableExample {
+public class RunnableDemo {
 
     @Test
     public void oldWay() {

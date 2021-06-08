@@ -14,7 +14,7 @@ interface InterfaceB {
     String name();
 }
 
-public class ExplicitTypeExample {
+public class ExplicitTypeDemo {
 
     public void sayHello(InterfaceA interfaceA) {
         System.out.print("hello, im am " + interfaceA.name());
@@ -25,7 +25,7 @@ public class ExplicitTypeExample {
     }
 
     public static void main(String[] args) {
-        ExplicitTypeExample example = new ExplicitTypeExample();
+        ExplicitTypeDemo example = new ExplicitTypeDemo();
         example.sayHello((InterfaceA) () -> "interfaceA");
     }
 }
