@@ -1,4 +1,4 @@
-package org.procde.functional.functionalinterface.introduce;
+package org.prcode.functional.functionalinterface.introduce;
 
 /**
  * @author kangd001

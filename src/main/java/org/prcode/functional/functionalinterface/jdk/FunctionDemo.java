@@ -1,4 +1,4 @@
-package org.procde.functional.functionalinterface.jdk;
+package org.prcode.functional.functionalinterface.jdk;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

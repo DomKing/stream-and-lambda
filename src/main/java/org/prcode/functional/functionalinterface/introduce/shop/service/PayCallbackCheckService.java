@@ -1,6 +1,6 @@
-package org.procde.functional.functionalinterface.introduce.shop.service;
+package org.prcode.functional.functionalinterface.introduce.shop.service;
 
-import org.procde.functional.functionalinterface.introduce.shop.pojo.PayCallbackInfo;
+import org.prcode.functional.functionalinterface.introduce.shop.pojo.PayCallbackInfo;
 
 /**
  * @author kangd001

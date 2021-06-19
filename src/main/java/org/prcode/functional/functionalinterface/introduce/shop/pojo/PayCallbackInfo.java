@@ -1,4 +1,4 @@
-package org.procde.functional.functionalinterface.introduce.shop.pojo;
+package org.prcode.functional.functionalinterface.introduce.shop.pojo;
 
 import java.util.Date;
 

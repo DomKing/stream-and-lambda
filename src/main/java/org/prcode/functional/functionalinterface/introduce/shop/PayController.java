@@ -1,7 +1,7 @@
-package org.procde.functional.functionalinterface.introduce.shop;
+package org.prcode.functional.functionalinterface.introduce.shop;
 
-import org.procde.functional.functionalinterface.introduce.shop.pojo.PayMethodInfo;
-import org.procde.functional.functionalinterface.introduce.shop.service.PayMethodInfoService;
+import org.prcode.functional.functionalinterface.introduce.shop.pojo.PayMethodInfo;
+import org.prcode.functional.functionalinterface.introduce.shop.service.PayMethodInfoService;
 
 /**
  * @author kangd001
