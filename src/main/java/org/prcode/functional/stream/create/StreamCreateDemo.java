@@ -3,13 +3,10 @@ package org.prcode.functional.stream.create;
 import org.junit.jupiter.api.Test;
 
 import java.security.SecureRandom;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.Consumer;
-import java.util.function.IntUnaryOperator;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -34,7 +31,7 @@ public class StreamCreateDemo {
     }
 
     @Test
-    public void emptyTest(){
+    public void emptyTest() {
         Stream<Integer> empty = Stream.empty();
         System.out.println(empty.findFirst().orElse(-1));
 

@@ -2,7 +2,6 @@ package org.prcode.functional.functionalinterface.jdk;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 

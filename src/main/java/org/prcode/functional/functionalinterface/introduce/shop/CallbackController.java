@@ -30,7 +30,5 @@ public class CallbackController {
         if (!service.verify(info)) {
             throw new Exception("信息校验失败，非法回调");
         }
-
-        Runnable r = () -> System.out.println("im am r1");
     }
 }
