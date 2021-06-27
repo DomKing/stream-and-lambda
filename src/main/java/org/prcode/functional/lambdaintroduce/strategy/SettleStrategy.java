@@ -10,6 +10,7 @@ public interface SettleStrategy {
 
     /**
      * 判断是否满足落户规则
+     *
      * @param citizen 居民对象
      * @return 是否满足
      */

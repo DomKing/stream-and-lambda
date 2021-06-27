@@ -1,10 +1,10 @@
 package org.prcode.functional.lambdaintroduce;
 
 import org.junit.jupiter.api.Test;
-import org.prcode.functional.lambdaintroduce.strategy.impl.CertificateSettleStrategy;
-import org.prcode.functional.lambdaintroduce.strategy.impl.SocialInsuranceSettleStrategy;
 import org.prcode.functional.lambdaintroduce.pojo.Citizen;
 import org.prcode.functional.lambdaintroduce.strategy.SettleStrategy;
+import org.prcode.functional.lambdaintroduce.strategy.impl.CertificateSettleStrategy;
+import org.prcode.functional.lambdaintroduce.strategy.impl.SocialInsuranceSettleStrategy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,7 +51,7 @@ public class DealSettleApply {
         List<Citizen> citizens = filterApply(initCitizens(), new SettleStrategy() {
             @Override
             public boolean test(Citizen citizen) {
-                return citizen.getAge() <=40 && citizen.getSocialInsuranceMonth() >= 12;
+                return citizen.getAge() <= 40 && citizen.getSocialInsuranceMonth() >= 12;
             }
         });
 
@@ -61,7 +61,7 @@ public class DealSettleApply {
     @Test
     public void testLambda() {
         List<Citizen> citizens = filterApply(initCitizens(),
-                citizen -> citizen.getAge() <=40 && citizen.getSocialInsuranceMonth() >= 12);
+                citizen -> citizen.getAge() <= 40 && citizen.getSocialInsuranceMonth() >= 12);
         System.out.println(citizens);
     }
 

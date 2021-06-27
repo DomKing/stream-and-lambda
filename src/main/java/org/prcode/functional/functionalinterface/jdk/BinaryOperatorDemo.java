@@ -39,7 +39,7 @@ public class BinaryOperatorDemo {
     public void compare() {
         BinaryOperator<Integer> min = BinaryOperator.minBy(Comparator.comparingInt(i -> i));
         BinaryOperator<Integer> max = BinaryOperator.maxBy(Comparator.comparingInt(i -> i));
-        System.out.println(min.apply(1,2));
-        System.out.println(max.apply(1,2));
+        System.out.println(min.apply(1, 2));
+        System.out.println(max.apply(1, 2));
     }
 }

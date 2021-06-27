@@ -68,7 +68,7 @@ public class FunctionDemo {
 
     @AllArgsConstructor
     @Data
-    class Student{
+    class Student {
         String id;
         String name;
     }

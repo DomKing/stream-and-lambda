@@ -11,6 +11,6 @@ public class CertificateSettleStrategy implements SettleStrategy {
     @Override
     public boolean test(Citizen citizen) {
         //不超过40岁且有国家认证的证书
-        return citizen.getAge() <=40 && citizen.getCertificateLevel() > 2;
+        return citizen.getAge() <= 40 && citizen.getCertificateLevel() > 2;
     }
 }

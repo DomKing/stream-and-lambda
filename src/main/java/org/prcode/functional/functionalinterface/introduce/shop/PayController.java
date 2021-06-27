@@ -13,7 +13,7 @@ public class PayController {
     public PayMethodInfo getPreparePayInfo(int payMethod) throws Exception {
         PayMethodInfo info;
         switch (payMethod) {
-            case 1 :
+            case 1:
                 info = getPreparePayInfo(() -> new PayMethodInfo(1, "支付宝支付", "12345"));
                 break;
             case 2:
