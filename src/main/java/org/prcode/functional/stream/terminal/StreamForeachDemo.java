@@ -4,13 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.IntFunction;
 
 /**
  * @author kangd001
- * @date 2021/6/29 17:27
+ * @date 2021/6/29 19:27
  */
-public class StreamForeach {
+public class StreamForeachDemo {
 
     @Test
     public void foreachTest() {

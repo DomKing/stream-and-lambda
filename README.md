@@ -21,3 +21,4 @@
 9. [stream and lambda(9) - 中间操作之 map 操作（map、flatmap)](http://blog.prcode.org/2021/06/stream-and-lambda-9-stream-map/) ：org.procde.functional.stream.middle
 10. [stream and lambda(10) - 中间操作之排序sorted与调试peek](http://blog.prcode.org/2021/06/stream-and-lambda-10-stream-sort/) ：org.procde.functional.stream.middle
 11. [stream and lambda(11) - Optional 简介](http://blog.prcode.org/2021/07/stream-and-lambda-11-optional/) ：org.procde.functional.stream.optional
+12. [stream and lambda(12) - 终止操作之查找与匹配（findAny、findFirst、allMatch、anyMatch、noneMatch）](http://blog.prcode.org/2021/07/stream-and-lambda-12-stream-find/) ：org.procde.functional.stream.terminal
