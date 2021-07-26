@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class IfElseDemo {
 
     @Test
-    public void ifDemo() {
+    public void ifFilterDemo() {
         List<String> names = Arrays.asList("zhangs", "lis", "wangw", "zhaol");
         List<String> newNames = names.stream().filter(s -> s.contains("s")).collect(Collectors.toList());
         System.out.println(newNames);
@@ -47,17 +47,15 @@ public class IfElseDemo {
 
         Map<Integer, List<String>> collect = names.stream().collect(Collectors.groupingBy(String::length));
         System.out.println(collect);
-
-
     }
 
     @Test
     public void ifElseifElseDemo() {
-        List<String> names = Arrays.asList("zhangs", "lis", "wangw", "zhaol");
+        List<String> names = Arrays.asList("zhangs", "lis", "wangwu", "zhaol");
         names.stream().map(IfElseCondition::of).forEach(
                 e ->
                         e.ifTrue(s -> s.contains("s"), s -> System.out.println(s + " contains s"))
-                                .ifTrue(s -> s.length() > 5, s -> System.out.println(s + ".length > 5"))
+                                .elsif(s -> s.length() > 5, s -> System.out.println(s + ".length > 5"))
                                 .otherwise(s -> System.out.println(s + " not contains s")));
     }
 

@@ -11,18 +11,33 @@ import java.util.function.Predicate;
 public class IfElseCondition<T> {
 
     private final T value;
+    /**
+     * 判断是否有条件命中，如果无命中，otherwise 兜底方法才会执行。
+     */
     private boolean hit = false;
 
     private IfElseCondition(T value) {
         this.value = Objects.requireNonNull(value);
     }
 
+    /**
+     * 提供静态方法便于生成对象
+     * @param item 需要判断的对象
+     */
     public static <T> IfElseCondition<T> of(T item) {
         return new IfElseCondition<>(item);
     }
 
     public IfElseCondition<T> ifTrue(Predicate<T> predicate, Consumer<T> ifConsumer) {
         if (predicate.test(value)) {
+            hit = true;
+            ifConsumer.accept(value);
+        }
+        return this;
+    }
+
+    public IfElseCondition<T> elsif(Predicate<T> predicate, Consumer<T> ifConsumer) {
+        if (!hit && predicate.test(value)) {
             hit = true;
             ifConsumer.accept(value);
         }
